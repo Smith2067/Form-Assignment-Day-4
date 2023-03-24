@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Day 4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    Datalist<hr><br>
+    <form id="datalist">
+        <fieldset>
+            <legend>Datalist</legend>
+            <input list="dataListOne">
+            <datalist id="dataListOne">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Mint">Mint</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Vanilla">Vanilla</option>
+            </datalist>
+            <br><br><br>
+            <select>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Mint">Mint</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Vanilla">Vanilla</option>
+            </select>
+        </fieldset>
+    </form>
+    <br>
+    <p>
+        <ul>Some differences between the two forms include:
+            <li>Datalist is an input, while Select is its own element.</li>
+            <li>By default, you can type freely into datalist.  Select is not a text box.</li>
+            <li>After selecting a datalist option, you cannot reselect one until you delete the text in the box.</li>
+        </ul>
+    </p>
+    <br><br>
+    Fieldset & Legend
+    <hr><br>
+    <form id="fieldsetLegendOne">
+        <fieldset>
+            <legend>Choose Your Favorite Monster</legend>
+            <input type="radio" name="monster" id="kracken">
+            <label for="kracken">Kracken</label>
+            <br>
+            <input type="radio" name="monster" id="sasquatch">
+            <label for="sasquatch">Sasquatch</label>
+            <br>
+            <input type="radio" name="monster" id="mothman">
+            <label for="mothman">Mothman</label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose Your Favorite Color</legend>
+            <input type="radio" name="color" id="blue">
+            <label for="blue">blue</label>
+            <br>
+            <input type="radio" name="color" id="green">
+            <label for="green">green</label>
+            <br>
+            <input type="radio" name="color" id="pink">
+            <label for="pink">pink</label>
+            <br>
+            <input type="radio" name="color" id="red">
+            <label for="red">red</label>
+            <br>
+            <input type="radio" name="color" id="yellow">
+            <label for="yellow">yellow</label>
+        </fieldset>
+    <p>I seperated the two groups by putting them into different fieldsets.
+        <br>
+        The user cannot change the input values of a disabled fieldset.
+    </p>
+    <br><br>
+    Meter Activity
+    <hr><br>
+
+    Temperature: 0 <meter value="100" low="50" optimum="75" high="90" min="0" max="120"></meter> 120
+    <br>
+    Temperature: 0 <meter value="30" low="50" optimum="75" high="90" min="0" max="120"></meter> 120
+    <br>
+    Temperature: 0 <meter value="75" low="50" optimum="75" high="90" min="0" max="120"></meter> 120
+    <br><br>
+    <p>
+        <ul>The six main attributes of the meter tag are:
+            <li>value</li>
+            <li>min</li>
+            <li>max</li>
+            <li>high</li>
+            <li>low</li>
+            <li>optimum</li>
+        </ul>
+    </p>
+    <br><br>
+    Output
+    <hr><br>
+    <form>
+        <fieldset>
+            <legend>Range & Input Addition</legend>
+            0 <input type="range" id="addRange"> 100  +  <input type="number" id="addInput"> = <p id="outputSum"></p>
+        </fieldset>
+    </form>
+    <br><br>
+    <form>
+        <fieldset>
+            <legend>Input & Input Multiplication</legend>
+            <input type="number" id="firstInput"> * <input type="number" id="secondInput"> = <p id="outputProduct"></p>
+        </fieldset>
+    </form>
+    <br><br>
+<script src='main.js'></script>
+</body>
+</html>
